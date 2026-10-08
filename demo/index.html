@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>kinCore · Engineering playground</title>
+  <meta name="description" content="An independent kinCore showcase with fictional data. Explore checklist completion, attribution, history and retry safety.">
+  <link rel="icon" type="image/svg+xml" href="/assets/kincore.svg">
+  <link rel="stylesheet" href="/demo/style.css">
+  <script type="module" src="/demo/app.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><a class="brand" href="https://kincore.co/welcome"><img src="/assets/kincore.svg" alt="" width="48" height="48">kin<span>Core</span></a><div class="header-actions"><button id="theme" aria-pressed="false">Graphite mode</button><a href="https://github.com/wo0zle/kincore-showcase">Read the code ↗</a></div></header>
+  <main id="main">
+    <section class="intro"><p class="eyebrow">The Demo House · Engineering playground</p><h1>kinCore</h1><h2>A checkbox. A whole lot behind it.</h2><p class="lede">Finish a chore. Credit the person who did it. Retry without a second award. Explore the small decisions that keep a shared home in sync.</p><div class="intro-actions"><a class="primary" href="#chores">Give it a go ↓</a><span>Fictional data. Nothing saved or sent.</span></div></section>
+    <div class="workspace">
+      <section id="chores"><div class="section-head"><h2>Let’s get it done.</h2><button id="reset">Reset demo ↺</button></div><p class="subtle">Check every step, then choose who actually finished.</p><div id="chore-list"></div><p id="status" class="status" role="status" aria-live="polite">Your turn. Start with a checklist.</p></section>
+      <aside><h2>Your people</h2><div id="profiles" class="profiles"></div><div class="note"><p class="eyebrow">A useful distinction</p><h3>Assigned ≠ completed.</h3><p>Someone else can do the dishes. The credit should follow the work.</p></div><section class="retry"><h3>The retry test</h3><p>Imagine the response was lost. Send the last completion again and watch the ledger stay put.</p><button id="retry" disabled>Retry last completion</button></section></aside>
+    </div>
+    <section class="history"><div class="section-head"><h2>History that holds up.</h2><span id="award-count" class="subtle">0 recorded awards</span></div><p class="subtle">Completed snapshots keep their steps. The next occurrence starts fresh.</p><div id="history-list"><p>No completions yet.</p></div></section>
+    <footer><p>Independent illustrative model · Simplified scoring · In-memory state</p><a href="https://kincore.co/welcome">Try the real kinCore ↗</a><p>Free for families. Supported by people who can.</p></footer>
+  </main>
+</body>
+</html>

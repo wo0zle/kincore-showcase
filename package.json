@@ -1,0 +1,12 @@
+{
+  "name": "kincore-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Independent kinCore engineering showcase with fictional data",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test demo/model.test.mjs && node scripts/check-public-content.mjs"
+  }
+}
